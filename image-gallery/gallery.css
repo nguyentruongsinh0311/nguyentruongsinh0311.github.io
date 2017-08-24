@@ -1,0 +1,12 @@
+.thumb img {
+	width: 32%;
+	height: 192px;
+	float: left;
+	margin: 10px 10px 10px 0;
+	padding: 5px;
+	border: 1px solid #ddd;
+	vertical-align: middle;
+}
+.thumb img:hover{
+	border-radius: 10%;
+}
