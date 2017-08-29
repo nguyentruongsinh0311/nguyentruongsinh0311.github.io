@@ -1,0 +1,90 @@
+*{
+	box-sizing: border-box;
+}
+body {font-family: "Open Sans", arial, sans-serif;
+
+}
+.wrap{
+	max-width: 1000px;
+	margin: auto;
+}
+#main-menu a.avatar img{
+	position: absolute;
+    max-width: 160px;
+    max-height: 160px;
+    border-radius: 50%;
+    top: -150px;
+    left: 0;
+ }
+#banner img {
+	width: 1000px;
+	height: 500px;	
+}
+#main-menu {
+	position: absolute;
+    background-color: #e8e5e5;
+    text-align: center;
+    padding: 10px 0;
+    height: 1011px;
+    width: 100px;
+}
+#main-menu a{
+	max-width: 160px;
+    max-height: 160px;
+    display: block;
+    color: grey;
+    text-decoration: none;
+    margin: 10px;
+    padding: 10px;
+}
+
+#main-menu a:hover{
+	color: black
+}
+#main-menu a.active{
+	color: red;
+	font-weight: bold;
+}
+h1 {
+	margin: 25px 0 10px 0;
+	font-size: 20px;
+	font-family: Georgia;
+}
+.thumb{
+	margin-left: 110px;
+	margin-right: -24px;
+}
+.thumb1 {
+	border:0px solid white;
+	cursor: pointer;
+}
+.thumb1 img {
+	max-width: 32%;
+	float: left;
+	padding: 5px;
+	margin: 10px 10px 10px 0px;
+	border: 1px solid white;								/*khung bao quanh 1 px vach lien mau cam */
+	vertical-align: middle;									/*can giua theo thanh phan bao ngoai */
+}
+#footer p{
+	margin: 0;
+	padding: 30px 0 15px 0;
+	border-top: 1px solid #c5c5c5;
+}
+#footer {
+	clear: both;
+	padding: 30px 0;
+	text-align: center;
+}
+
+#backtop img{
+max-width: 50px;
+max-height: 50px;
+float: right;
+}
+
+#backtop {
+	position: fixed;
+	right: 50px;
+	bottom: 50px;
+}
