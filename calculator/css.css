@@ -1,0 +1,41 @@
+table{
+   background-color: #808080;
+   margin: auto;
+   width: 300px;
+   height: 300px;
+   box-shadow: 0px 0px 3px 6px #ccc;
+
+}
+
+#result{
+   width: 295px;
+   height: 35px;
+   text-align: right;
+   font: 20px bold;
+}
+.btn{
+   width: 52px;
+   height: 58px;
+   font-family: inherit;
+   background-color: #e4cabe;
+       color: palevioletred;
+}
+#clear{
+width: 52px;
+   height: 58px;
+  }
+
+#equ{
+   width: 52px;
+   height: 58px;
+}
+
+#zero {
+	width: 114px;
+	height: 57px;
+}
+#del{
+	width: 52px;
+	height: 58px;
+
+}

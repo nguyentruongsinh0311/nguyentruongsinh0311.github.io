@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Calculator</title>
+	<meta charset="utf-8">
+	<link rel="stylesheet" type="text/css" href="css.css">
+	
+</head>
+<body>
+		<table>
+			<tr>
+				 <td colspan="5"> <input id="result" type="text" ></td>
+			</tr>
+			<tr>
+				
+
+				<td><input type="button" class="btn" value="%" onclick="percent()"></td>
+				<td><input type="button" class="btn" value="(" onclick="addtoscreen('(')"></td>
+				<td><input type="button" class="btn" value=")" onclick="addtoscreen(')')"></td>
+				<td><input type="button" class="btn" value="RAN" onclick="ran()"></td>
+				<td><input type="button" id="del" value="DEL" onclick="del()"></td>
+					
+			</tr>
+			<tr>
+				<td><input type="button" class="btn" value="7" onclick="addtoscreen('7')" ></td>
+				<td><input type="button" class="btn" value="8" onclick="addtoscreen('8')" ></td>
+				<td><input type="button" class="btn" value="9" onclick="addtoscreen('9')" ></td>
+				<td><input type="button" class="btn" value="/" onclick="addtoscreen('/')"></td>
+				<td><input type="button" id="del" value="x&#178" onclick="square()"></td>
+			
+			</tr>
+			<tr>
+				<td><input type="button" class="btn" value="4"onclick="addtoscreen('4')"></td>
+				<td><input type="button" class="btn" value="5"onclick="addtoscreen('5')"></td>
+				<td><input type="button" class="btn" value="6"onclick="addtoscreen('6')"></td>
+				<td><input type="button" class="btn" value="*"onclick="addtoscreen('*')"></td>
+				<td><input type="button" id="del" value="&#8730" onclick="squareRoot()"></td>
+				
+			</tr>
+			<tr>
+				<td><input type="button" class="btn" value="1"onclick="addtoscreen('1')"></td>
+				<td><input type="button" class="btn" value="2"onclick="addtoscreen('2')"></td>
+				<td><input type="button" class="btn" value="3"onclick="addtoscreen('3')"></td>
+				<td><input type="button" class="btn" value="+"onclick="addtoscreen('+')"></td>
+				<td ><input id="clear" type="button"  value="C" onclick="addtoscreen('c')"></td>
+				
+			</tr>
+			<tr>
+				<td colspan="2"><input id="zero" type="button" class="btn" value="0" onclick="addtoscreen('0')"></td>
+				<td><input type="button" class="btn" value= "." onclick="addtoscreen('.')"></td>
+				<td><input type="button" class="btn" value= "-" onclick="addtoscreen('-')"></td>
+				<td ><input id="equ" type="button"  value="=" onclick="answer()"></td>
+			</tr>
+
+		</table>
+		<script type="text/javascript" src="js.js">
+
+		</script>
+</body>
+</html>
