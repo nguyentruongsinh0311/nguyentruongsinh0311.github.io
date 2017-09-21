@@ -31,3 +31,6 @@ function squareRoot(){
 	box.value=Math.sqrt(box.value)
 }
 
+function percent(){
+	box.value = (box.value*0.01)
+}
