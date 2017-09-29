@@ -1,0 +1,36 @@
+*{
+	box-sizing: border-box;
+}
+body{
+	background-image: url('img/background.jpg');
+	background-size: cover;	
+}
+.wrap{
+position: relative;
+top: 0;
+left: 0;
+height: 100%;
+text-align: center;
+
+}
+.image{
+	margin-top: 200px;
+	animation: scale 2s linear infinite;
+}
+	@keyframes scale{
+    0%{
+      transform: scale(1);
+      }
+    25%{
+      transform: scale(1.2);
+        }
+    50%{
+      transform: scale(1);
+    	}
+   	75%{
+   		transform: scale(0.8);
+   	}
+   	100%{
+   		transform: scale(1);
+   	}
+  }
