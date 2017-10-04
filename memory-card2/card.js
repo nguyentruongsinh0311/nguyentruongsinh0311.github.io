@@ -1,6 +1,11 @@
 var cards = ['a1','a2','a3','a4','a5','a6','a7','a8',];
 var current = null;  // bien dung de luu quan bai da lat len
+var count = 0;
+var remainingTime = 60;
 
+	
+	document.getElementById('bg-music').load();
+	document.getElementById('bg-music').play();
 
 function shuffle(array) {
     var currentIndex = array.length, temporaryValue, randomIndex;
@@ -21,10 +26,22 @@ function shuffle(array) {
   return array;
 }
 
+	//ham choi nhac
+function playsound(sound){
+	document.getElementById(sound+'-sound').load();
+	document.getElementById(sound+'-sound').play();
+
+}
+function modal(type){
+		 $('.modal-backdrop').css('display', 'block');
+		 $('.modal.' + type).fadeIn();
+}
+
+	//khoi tao ham xoay bai
 function flip(card){
 	$(card).css('pointer-events', 'none');
 	$(card).toggleClass('flipped');
-	document.getElementById('flip').play();
+	playsound('flip');
 	if(!current){
 		current = $(card);
 		}
@@ -39,25 +56,34 @@ function flip(card){
 				current = null;
 				$('.card').css('pointer-events', 'auto');
 				
-			},600);
-			document.getElementById('no').play();
+			},800);
+			playsound('no');
 		}
 		else{
 			//giong nhau
+			count++;
 			setTimeout(function(){
-				$(card).css('opacity','0');
-				current.css('opacity', '0');
-				console.log('giong nhau');
-				current = null;
-				
+				$(card).css('opacity','0').attr('onclick','').children().children('img').css('cursor','default');
+				current.css('opacity', '0').attr('onclick','').children().children('img').css('cursor', 'default');
+				current = null;				
 				$('.card').css('pointer-events', 'auto');
-				document.getElementById('yes').play();
+				playsound('yes');
+				//thang cuoc
+				if (count == 8){
+					document.getElementById('bg-music').load();
+					playsound('win');
+					clearInterval(run);
+					modal('win')
+					run = null;
+
+				}
 		},600);
 			
 		}
 	}
 
 }
+
 
 $(function(){
 	//nhan doi mang de tao cap bai
@@ -76,3 +102,20 @@ $(function(){
 	$('.content').html(html);
 
 });
+
+	//tao thoi gian choi trong game
+var run = setInterval(function(){
+	remainingTime--;
+	$('.timeout').html("0:" + remainingTime); 
+	if(remainingTime <10){
+		$('.timeout').html("0:0" + remainingTime); 
+	}
+	if (remainingTime == 0){
+	//thua cuoc
+	clearInterval(run);
+	run = null;
+	document.getElementById('bg-music').load();
+	playsound('lose');
+	modal('lose');
+}
+},1000);
