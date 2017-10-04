@@ -1,7 +1,7 @@
 var cards = ['a1','a2','a3','a4','a5','a6','a7','a8',];
 var current = null;  // bien dung de luu quan bai da lat len
 var count = 0;
-var remainingTime = 60;
+var remainingTime = 600000;
 
 	
 	document.getElementById('bg-music').load();

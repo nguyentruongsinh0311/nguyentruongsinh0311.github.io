@@ -13,6 +13,7 @@ img {
     transition: all 0.3s linear;
 }
 .wrap {
+	max-width: 1350px;
     position: relative;
 	margin: auto;
     padding: 15px;
@@ -20,6 +21,7 @@ img {
 }
 .content {
 	margin-top: 10px;
+	margin: auto;
 	clear: both;
     position: relative;
     overflow: auto;
@@ -38,8 +40,8 @@ img {
 
 
 .card img {
-	width: 144px;
-	height: 265px;
+	width: 140px;
+	height: 248px;
     cursor: pointer;
     box-shadow: 0px 0px 5px 0px rgba(200, 240, 240, .75);
 }
@@ -71,7 +73,7 @@ box-shadow: 0 0 15px 5px rgba(218,81,70,1);
 }
 .timeout{
 	background-color: #4a3854;
-	margin-bottom: 10px;
+	margin: 10px;
 	height: 55px;
 	width: 200px;
 	text-align: center;
@@ -113,7 +115,7 @@ box-shadow: 0 0 15px 5px rgba(218,81,70,1);
     cursor: pointer;
     vertical-align: middle;
     font-size: 26px;
-    width: 147px;
+    width: 149px;
     height: 65px;
     background-color: #035db0;
     transition: all 0.5s ease-out;
