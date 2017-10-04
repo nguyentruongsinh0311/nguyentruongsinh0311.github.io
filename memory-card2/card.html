@@ -1,0 +1,60 @@
+ <!DOCTYPE html>
+<html>
+<head>
+	<title>Memory cards</title>
+	<link rel="stylesheet" type="text/css" href="card.css">
+	<link rel="icon" type="icon" href="img/ima.png">
+
+</head>
+<body>
+
+<div class="wrap">
+<div class="time">
+		<div class="timeout"></div>
+</div>
+	<div class="content">
+	</div>
+</div>
+
+<audio id="bg-music">; 
+    <source src="music.mp3" type="audio/mpeg">
+</audio>
+<audio id="flip-sound">
+	<source src="flip.mp3" type="audio/mpeg">
+</audio>
+<audio id="yes-sound">
+	<source src="yes.mp3" type="audio/mpeg">
+</audio>
+<audio id="no-sound">
+	<source src="no.mp3" type="audio/mpeg">
+</audio>
+<audio id="win-sound">
+	<source src="win.mp3" type="audio/mpeg">
+</audio>
+<audio id="lose-sound">
+	<source src="lose.mp3" type="audio/mpeg">
+</audio>
+</div>
+<div class="modal win">
+	<div class="dialog">
+		<img src="img/winner.jpg">
+		<h1>you win</h1>
+		<a href="start.html"><button type="button" class="btn btn-default">play again</button></a>
+	</div>
+</div>
+<div class="modal lose">
+	<div class="dialog">
+		<img src="img/lose.gif">
+		<h1>Time Over</h1>
+		<a href="start.html"><button type="button" class="btn btn-default">play again</button></a>
+	</div>
+	
+</div>
+<div class="modal-backdrop"></div>
+
+<div id="snow">
+</div>
+<script type="text/javascript" src="jquery-3.2.1.min.js"></script>
+<script type="text/javascript" src="card.js"></script>
+</body>
+</html>

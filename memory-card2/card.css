@@ -1,0 +1,144 @@
+  *{
+	box-sizing: border-box;
+}
+body{
+	margin: 0;
+	padding: 0;
+    background-image: url('img/background.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+img {
+	max-width: 100%;
+    transition: all 0.3s linear;
+}
+.wrap {
+	max-width: 1350px;
+    position: relative;
+	margin: auto;
+    padding: 15px;
+    height: 100%;
+}
+.content {
+	margin-top: 10px;
+	margin: auto;
+	clear: both;
+    position: relative;
+    overflow: auto;
+    z-index: 2;
+
+}
+.grid {
+    float: left;
+    padding: 10px;
+}
+
+.card {
+    position: relative;
+   
+}
+
+
+.card img {
+	width: 140px;
+	height: 240px;
+    cursor: pointer;
+    box-shadow: 0px 0px 5px 0px rgba(200, 240, 240, .75);
+}
+
+
+.card .back {
+	transform: rotateY(180deg);
+	position: absolute;
+	top: 0;
+	left: 0;
+ 	}
+.card:hover .back{
+box-shadow: 0 0 15px 5px rgba(218,81,70,1);	
+}
+.card:hover .front {
+box-shadow: 0 0 15px 5px rgba(218,81,70,1);	
+
+}
+.card .back, .card .front{
+	transition: all 1s;
+	backface-visibility: hidden;
+} 
+.card.flipped .front{
+	transform: rotateY(180deg);
+}
+
+.card.flipped .back{
+	transform: rotateY(0deg);
+}
+.timeout{
+	background-color: #4a3854;
+	margin: 10px;
+	height: 55px;
+	width: 200px;
+	text-align: center;
+	border: 5px solid red;
+	font-size: 20px;
+	font-size: 40px;
+	color: white;
+}
+.modal, .modal-backdrop {
+    position: fixed;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    z-index: 1000;
+    display: none;
+}
+
+.modal-backdrop {
+    z-index: 900;
+    background-color: #000;
+    opacity: 0.5;
+}
+ .dialog {
+ 	text-transform: uppercase;
+ 	color: wheat;
+    margin: 10% auto;
+    padding: 10px;
+    width: 500px;
+    text-align: center;
+    overflow: auto;
+}
+.dialog img{
+	width: 400px;
+}
+.btn-default{
+	color: white;
+	border: none;
+    cursor: pointer;
+    vertical-align: middle;
+    font-size: 26px;
+    width: 149px;
+    height: 65px;
+    background-color: #035db0;
+    transition: all 0.5s ease-out;
+    border-radius: 50px;
+}
+.btn-default:hover{
+	transform: translate(0, -3px);
+}
+
+#snow{
+	background: none;
+	font-family: Androgyne;
+	background-image: url('http://www.wearewebstars.dk/codepen/img/s1.png'), url('http://www.wearewebstars.dk/codepen/img//s2.png'), url('http://www.wearewebstars.dk/codepen/img//s3.png');
+	height: 100%;
+	left: 0;
+	position: absolute;
+	top: 0;
+	width: 100%;
+	z-index:1;
+	animation: snow 10s linear infinite;
+}
+@keyframes snow {
+  0% {background-position: 0px 0px, 0px 0px, 0px 0px;}
+  50% {background-position: 500px 500px, 100px 200px, -100px 150px;}
+  100% {background-position: 500px 1000px, 200px 400px, -100px 300px;}
+}
