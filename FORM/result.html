@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Dang ky</title>
+	<meta charset="utf-8">
+	<link rel="stylesheet" type="text/css" href="result.css">
+</head>
+<body>
+	<h1>
+	Đăng ký thành công
+	</h1>
+	<div class="wrap">
+	<div class="content">
+	<h2>Cảm ơn bạn đã đăng kí thông tin. Đây là thông tin bạn đã điền vào form:</h2>
+	<b>Họ tên :</b><span id="hoten"></span><br>
+	<b>Năm sinh :</b><span id="year"></span><br>
+	<b>Giới tính :</b><span id="gender"></span><br>
+	<b>Số điện thoại :</b><span id="number"></span><br>
+	<b>Email :</b><span id="email"></span><br>
+	<b>Địa chỉ Facebook:</b><span id="facebook-address"></span><br>
+	<a href="form.html" style="text-decoration: none"><button>Quay lại</button></a>
+	</div>
+	</div>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js">
+	</script>
+	<script>
+	var url = new URL(window.location.href);
+	var searchParams = new URLSearchParams(url.search);
+	$("#hoten").html(searchParams.get("first-name"));
+	$('#year').html(searchParams.get('bday'));
+	$('#gender').html(searchParams.get('gender'));
+	$('#number').html(searchParams.get('phone-number'));
+	$('#email').html(searchParams.get('email'));
+	$('#facebook-address').html(searchParams.get('facebook-address'));
+</script>
+</body>
+</html>

@@ -1,0 +1,79 @@
+*{
+	box-sizing: border-box;
+}
+body{
+	background: #76b852;
+}
+.wrap{
+	width: 360px;
+	margin: auto;
+
+}
+h1{
+	 text-align: center; 
+	 color: white;
+	 font-family:sans-serif;
+}
+.content{
+	clear: both;
+	border-radius: 10px;
+	max-width: 360px;
+	background-color: #fff;
+	position: relative;
+	z-index: 1;
+	margin: 0 auto 100px;
+	padding: 45px;
+	box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.2);
+}
+.content input{
+	border-radius: 10px;
+	padding: 10px;
+	margin: 5px;
+	background: #f2f2f2;
+	font-family: "Roboto" ,sans-serif;
+	font-size: 14px;
+	width: 100%;
+}
+button.btn-on{
+	width: 120px;
+	background-color: #4CAF50;
+	height: 40px;
+	font-family: "Roboto", sans-serif;
+  	color: #fff;
+  	font-size: 18px;
+  	padding: 10px;
+  	cursor: pointer;
+	margin: 5px;
+	margin-top: 10px;
+	border-radius: 10px;
+}
+button:hover.btn-on{
+	background-color: #43A047;
+}
+.content .message a{
+	text-decoration: none;
+	color: #4CAF50;
+}
+
+
+p{
+	text-align: center;
+}
+button.btn-cancel{
+	width: 120px;
+	height: 40px;
+	font-family: "Roboto", sans-serif;
+  	color: #504c4c;
+  	font-size: 18px;
+  	padding: 10px;
+  	cursor: pointer;
+	margin: 5px;
+	margin-top: 10px;
+	border-radius: 10px;
+}
+span {
+	display: block;
+	color: red;
+	text-align: right;
+	margin-top: 2px;
+}

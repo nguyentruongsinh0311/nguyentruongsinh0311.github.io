@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Dang ky</title>
+	<meta charset="utf-8">
+</head>
+<body>
+	<h1>
+		đăng nhập thành công
+	</h1>
+	<div id="hoten"></div>
+	<div id="password"></div>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js">
+	</script>
+	<script>
+		var url = new URL(window.location.href);
+	var searchParams = new URLSearchParams(url.search);
+	$("#hoten").html("Họ tên: "+searchParams.get("name"));
+	$('#password').html("Mat khau: "+searchParams.get('password'));
+</script>
+</body>
+</html>
