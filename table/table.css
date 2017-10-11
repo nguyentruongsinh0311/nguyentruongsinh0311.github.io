@@ -1,0 +1,36 @@
+*{
+	box-sizing: border-box;
+}
+body{
+	background-color: #d9edf7;
+	font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+}
+table {
+	width: 80%;
+	margin: auto;
+}
+table, th, td {
+	border: 1px solid black;
+	border-collapse: collapse;
+}
+th {
+	background-color:rgba(27, 255, 0, 0.26);
+	height: 50px;
+	text-align: center;
+}
+td {
+	height: 50px;
+	text-align: left;
+	padding: 5px;
+}
+h1{
+	text-align: center;
+	color: green;
+	text-transform: uppercase;
+}
+tr:hover {
+			background-color: #F2DEDE;
+		}
+.btn{
+	cursor: pointer;
+}
