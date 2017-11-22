@@ -359,6 +359,34 @@ a{
 	.second-content .sidebar:after{
 		clear: both;
 	}
+
+	/* ----------------laptop desktop --------------------------- */
+
+	@media (max-width: 1400px){
+		.footer-bottom{
+			width: 1010px;
+			left: 14%;
+			height: 350px;
+		}
+		.black-color{
+			height: 350px;
+		}
+		.footer-content{
+			padding-top: 20px;
+			height: 230px;
+		}
+		.cooldown{
+			left: 5%;
+		}
+		.title{
+			top: 100px;
+			left: 190px;
+		}
+		.text-title p{
+			margin-top: 0;
+			font-size: 60px;
+		}
+	}
 	/*---------------------tabet---------------------------------*/
 	@media (max-width: 768px)
 	{
@@ -369,8 +397,8 @@ a{
 			width: 400px;
 		}
 		.cooldown{
-			width: 400px;
-			left: 27%;
+			width: 500px;
+			left: 17%;
 		}
 		.feature1{
 			width: 600px;
@@ -423,7 +451,7 @@ a{
 			overflow: hidden;
 			height: 1200px;
 		}
-		 .main .item1{
+		.main .item1{
 			position: static;
 			top: 1px;
 			left: 1px;
@@ -442,4 +470,105 @@ a{
 		}
 	}
 
-	
+	/*---------------- mobile -------------------------------------*/	
+	@media (max-width: 500px){
+		.cooldown{
+			width: 250px;
+		}
+		.cooldown-content span{
+			font-size: 20px;
+		}
+		.time{
+			margin-left: 10px;
+		}
+		.cooldown .cooldown-button{
+			width: 105px;
+		}
+		.cooldown-form #email {
+			height: 35px;
+			width: 120px;
+		}
+		.img-background{
+			margin-bottom: 30px;
+		}
+		.cooldown-color{
+			height: 130px;
+			top: 70px;
+		}
+		.time-cooldown{
+			padding-top: 105px;
+
+		}
+		.sidebar .menuleft h2 {
+			font-size: 20px;
+			font-weight: 100;
+			margin-top: 5px;
+			margin-bottom: 10px;
+		}
+		.sidebar .menuleft {
+			padding-right: 15px;
+			padding-left: 15px;
+		}
+		.sidebar .menuleft h1 {
+			font-size: 30px;
+			color: #0190ff;
+			margin-top: 0;
+			font-weight: 100;
+		}
+		.feature1{
+			width: 300px;
+		}
+		.feature2{
+			width: 300px;
+		}
+		.main-content {
+    	width: 100%;
+    	margin-top: 0px;
+    	padding-left: 25px;
+		}
+		.last-content{
+			width: 100%;
+			margin-left: 0;
+			padding-left: 25px;
+		}
+		.footer-tabet{
+			left: 5%;
+			width: 330px;
+			height: 90px;
+		}
+		.register-form label {
+			display: none;
+		}
+		.register-form input {
+			width: 40%;
+		}
+		.register-form{
+			float: left;
+		}
+		.footer-tabet .register-form{
+			text-align: center;
+		}
+		.footer-tabet .register-form .form-button{
+			width: 50%;
+			height: 35px;
+		}
+		.sidebar{
+			width: 100%;
+		}
+		.main{
+			width: 100%;
+		}
+		.main .item1 img{
+			width: 100%;
+		}
+		.main .item2 img{
+			width: 100%;
+		}
+		.main .item5 img{
+			width: 100%;
+		}
+		.feature2{
+			height: 1212px;
+			padding-bottom: 10px;
+		}
+	}
