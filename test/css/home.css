@@ -567,8 +567,16 @@ a{
 		.main .item5 img{
 			width: 100%;
 		}
-		.feature2{
-			height: 1212px;
+		.feature2 {
+			height: 600px;
 			padding-bottom: 10px;
+			overflow: inherit;
+		}
+		.second-content .sidebar{
+			display: none;
+		}
+		.feature2 .second-content{
+			overflow: hidden;
+			height: 600px;
 		}
 	}
