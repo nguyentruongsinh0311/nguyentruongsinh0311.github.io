@@ -1175,11 +1175,21 @@ position: absolute;
     margin-top: 0px;
     font-style: normal;
     font-weight: 400;
-    font-size: 70px;
+    font-size: 30px;
     line-height: 1.1;
     font-family: 'Great Vibes', handwriting;
     letter-spacing: 0em;
     text-align: inherit;
     color: #fff;
+}
+.mouse-scroll .mouse{
+  height: 20px;
+  width: 12px;
+}
+.navbar-fixed-top{
+  padding: 40px 40px 0 40px;
+}
+.carousel-indicators{
+  display: none;
 }
 }
