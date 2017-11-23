@@ -31,6 +31,12 @@
   background-image: none;
   border-radius: 4px;
 }
+@media (min-width: 768px){
+.navbar-right {
+    float: right!important;
+    margin-right: -30px;
+}
+}
 .navbar-toggle .icon-bar {
   display: block;
   width: 22px;
@@ -55,8 +61,6 @@
   transition: all ease 1s;
   height: 80px;
   padding-top: 15px;
-  text-align: center;
-  
 }
 #nav.change li a{
 	color: #eee;
@@ -87,7 +91,8 @@
 @media screen and (min-width: 768px){
 .carousel-caption {
     left: 7%;
-    padding-bottom: 280px;
+    bottom: 30%;
+}
 }
 .dropdown-menu>li>a{
   color: #fff;
@@ -1092,4 +1097,89 @@ position: absolute;
         -webkit-transform:rotate(0) scale(1) skew(1deg);
                 transform:rotate(0) scale(1) skew(1deg)
     }
+}
+
+
+/*------------------------reponsive--------------------------------------------------*/
+@media screen and (max-width: 912px){
+  .text-logo h1{
+    font-size: 90px;
+  }
+}
+
+
+@media screen and (max-width: 767px){
+  .text-content h4{
+    font-style: normal;
+    font-weight: 300;
+    font-size: 30px;
+    line-height: 1.43;
+    font-family: 'Great Vibes', handwriting;
+    letter-spacing: 0.1em;
+    text-align: inherit;
+    color: #fff;
+}
+.text-logo h1{
+    margin-bottom: 0px;
+    margin-top: 0px;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 70px;
+    line-height: 1.1;
+    font-family: 'Great Vibes', handwriting;
+    letter-spacing: 0em;
+    text-align: inherit;
+    color: #fff;
+}
+  
+.box-title .lb-name {
+    color: #f25860;
+    display: inline-block;
+    font-size: 45px;
+    font-weight: 300;
+    padding: 0;
+    margin: 0;
+    font-weight: bold;
+    position: relative;
+}
+.phonering-alo-ph-circle{
+  width: 80px;
+  height: 80px;
+  }
+  .phonering-alo-ph-circle-fill{
+    width: 60px;
+    height: 60px;
+    top: 130px;
+    right: 30px;
+  }
+  .phonering-alo-ph-img-circle{
+    width: 40px;
+    height: 40px;
+    top: 140px;
+    right: 40px;
+  }
+  .color{
+    background-color: rgba(220,142,142,0.9);
+    margin-top: 15px;
+  }
+  .navbar-default .navbar-nav .open .dropdown-menu>li>a {
+    color: #fff;
+}
+}
+
+/*---------------------------------------------------------------------------*/
+
+@media screen and (max-width: 500px){
+  .text-logo h1{
+    margin-bottom: 0px;
+    margin-top: 0px;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 70px;
+    line-height: 1.1;
+    font-family: 'Great Vibes', handwriting;
+    letter-spacing: 0em;
+    text-align: inherit;
+    color: #fff;
+}
 }
