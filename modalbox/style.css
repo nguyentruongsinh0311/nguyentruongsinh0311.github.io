@@ -1,0 +1,176 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+	padding: 0;
+}
+
+body {
+	background-color: #da4a4a;
+}
+.container {
+	width: 100%;
+	position: relative;
+}
+.wrapper {
+	width: 900px;
+	height: 700px;
+	margin: auto;
+	padding: auto;
+	background-color: #c54f64;
+}
+
+.title {
+	width: 100%;
+	height: 100px;
+	background-color: #984747;
+	color: white;
+	text-align: center;
+	padding: 25px;
+}
+
+
+.text {
+	width: 400px;
+	height: 400px;
+	margin: 50px;
+	padding-right: 10px;
+	border-right: 5px solid black ;
+	text-align: justify;
+	float: left;
+}
+
+.butn {
+	width: 400px;
+	float: left;
+	margin-top: 50px;
+}
+
+.btn{
+	padding: 20px;
+	background-color: brown;
+	border-radius: 10px;
+	border-color: brown;
+	cursor: pointer;
+	color:white;
+	margin-bottom: 10px;
+	margin-left: 30px; 
+}
+
+.btn:focus {
+	outline: none;
+}
+
+
+.des {
+	width: 400px;
+	height: 50px;
+	background: brown;
+	color: black;
+	text-align: center;
+	padding: 15px;
+}
+
+.content {
+	color: white;
+	padding: 20px;
+}
+
+.modal {
+	clear: both;
+	width: 400px;
+	height: 200px;
+	background-color: black;
+	opacity: 0;
+	visibility: hidden;
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	z-index: 2;
+	margin-top: -200px;
+	margin-left: -200px;
+
+}
+
+.modal .btn {
+	margin-left: 160px;
+	margin-top: 20px;
+	padding: 10px;
+}
+
+.grey {
+	width: 100%;
+	height: 100%;
+	background-color: rgba(0, 0, 0, 0.37);;
+	position: absolute;
+	top: 0px;
+	left: 0px;
+	z-index: 1;
+	opacity: 0;
+	visibility: hidden;
+}
+
+.grey.show {
+	opacity: 1;
+	visibility: visible;
+}
+
+.modal1 {
+	transform: scale(0.5);
+	transition: 0.4s;
+}
+
+.modal1.show {
+	opacity: 1;
+	visibility: visible;
+	transform: scale(1.2);
+}
+
+
+.modal2 {
+	transform: scale(0.5) rotate(0deg);
+	transition: 0.4s;
+
+}
+
+.modal2.show {
+	opacity: 1;
+	visibility: visible;
+	transform: scale(1.2) rotate(360deg);
+}
+
+.modal3 {
+	transform: translateX(360px);
+	transition: 0.2s;
+
+}
+
+.modal3.show {
+	opacity: 1;
+	visibility: visible;
+	transform: translateX(0px);
+}
+
+.modal4 {
+	transform: translateY(-360px);
+	transition: 0.4s;
+
+}
+
+.modal4.show {
+	opacity: 1;
+	visibility: visible;
+	transform: translateX(0px);
+}
+
+.modal5 {
+	transform: rotateX(0deg);
+	transition: 1s;
+	perspective: 800px;
+
+}
+
+.modal5.show {
+	opacity: 1;
+	visibility: visible;
+	transform: rotateX(360deg);
+}

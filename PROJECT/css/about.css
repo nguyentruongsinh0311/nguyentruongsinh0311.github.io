@@ -1,0 +1,160 @@
+.contact-background .background{
+text-align: center;
+  background:url('../img/bg-about2.jpg') top fixed no-repeat;
+  background-size: cover;
+ height: 100vh;
+  margin-bottom: 0px;
+  padding-top: 40px;
+  
+}
+
+.breadcrumb{
+	background: transparent;
+	padding: 20px 0 10px;
+
+}
+.breadcrumb >li{
+font-size: 14px;
+display: inline-block;
+}
+.breadcrumb >li > a{
+	color: #6a6a6a;
+	font-size: 14px;
+	text-decoration: none;
+}
+.breadcrumb>li>a:hover{
+	color: #f25860;
+}
+.breadcrumb .fa{
+	margin: 2px 5px 0 0;
+	color: #999;
+}
+.breadcrumb .fa:hover{
+color: #f25860;
+}
+
+.breadcrumb .active{
+	color: #f25860;
+}
+.breadcrumb > li + li:before{
+	content: "\f105";
+	font-family: 'FontAwesome';
+	color: #a0a0a0;
+	padding: 0 10px 0 5px;
+}
+
+.bg-line{
+	border-top: 1px solid #e5e5e5;
+}
+.about-top{
+	padding: 40px 0 0;
+	margin: 0 0 30px;
+}
+.g-content{
+	text-align: left;
+	font-family: 'Roboto', sans-serif;
+}
+.about-top .g-row{
+	font-size: 14px;
+	color: #222;
+	line-height: 24px;
+	margin-bottom: 20px;
+	font-weight: 300;
+}
+.about-top .g-row .g-title{
+	font-size: 30px;
+	color: #333;
+	text-transform: uppercase;
+	line-height: 44px;
+	display: block;
+	margin-right: 3px;
+	color: #f25860;
+}
+.about-top .g-row .g-desc{
+	font-size: 20px;
+	color: #6a6a6a;
+	text-transform: uppercase;
+	display: block;
+	padding: 10px 0;
+}
+.pimg1{
+	background-image: url('../img/bg-about4.jpg');
+	min-height: 400px;
+	position: relative;
+	opacity: 0.8;
+	background-position: top;
+	background-size: cover;
+	background-repeat: no-repeat;
+	background-attachment: fixed;
+}
+
+.about-info{
+	padding: 15px 0;
+
+}
+.ai-item{
+	margin:0 0 15px;
+}
+.ai-item .ai-thumb{
+	border: 1px solid #cacaca;
+	width: 100px;
+	height: 100px;
+	overflow: hidden;
+	margin: 0 auto 7px;
+	text-align: center;
+	padding: 15px 0 0;
+	border-radius: 50%;
+}
+.ai-thumb .icon64-meday{
+	background-image: url('../img/icon-bg1.png');
+	width: 64px;
+	height: 64px;
+	display: inline-block;
+	vertical-align: top;
+}
+.ai-thumb .icon64-place{
+	background-image: url('../img/icon-bg2.png');
+	width: 64px;
+	height: 64px;
+	display: inline-block;
+	vertical-align: top;
+}
+.ai-thumb .icon64-heart{
+	background-image: url('../img/icon-bg3.png');
+	width: 64px;
+	height: 64px;
+	display: inline-block;
+	vertical-align: top;
+}
+.ai-thumb .icon64-img{
+	background-image: url('../img/icon-bg4.png');
+	width: 64px;
+	height: 64px;
+	display: inline-block;
+	vertical-align: top;
+}
+.ai-number{
+	font-size: 40px;
+	color: #cacaca;
+	text-align: center;
+	font-weight: 700;
+}
+.ai-desc{
+	font-weight: 400;
+	font-size: 18px;
+	color: #222;
+	text-align: center;
+	font-family: 'Roboto', sans-serif;
+
+}
+.pimg2{
+	background-image: url('../img/bg-about1.jpg');
+	min-height: 300px;
+	position: relative;
+	background-position: bottom;
+	background-size: cover;
+	background-repeat: no-repeat;
+	background-attachment: fixed;
+	opacity: 0.8;
+}
+
