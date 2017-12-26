@@ -1,0 +1,91 @@
+ //Sass -@Demo menu
+ 
+@import 'main';
+
+$bg:#aaa;
+$text-color:white;
+$bg-color:lightgreen;
+.nav-bar{
+	width: 100%;
+	ul{
+		background: $bg;
+		display: flex;
+		margin: 0 auto;
+		padding: 0 auto;
+		overflow: auto;
+	}
+	li{
+		width: 100%;
+		list-style-type: none;
+		text-align: center;
+	}
+	a{
+		padding: 20px 20px;
+		display: block;
+		text-transform: uppercase;
+		color: $text-color;
+		text-decoration: none;
+		&:hover{
+			background: $bg-color;
+		}
+		&:active{
+			color:red;
+		}
+		&:after{
+			content:'!';
+		}
+	}
+
+}
+.content{
+	margin: 30px auto;
+	text-align: center;
+	.btn1{
+		padding: 12px 20px;
+		margin: 10px;
+		color: $bg-color;
+		border: solid 1px $bg-color;
+		background-color: $text-color;
+
+	}
+	.btn2{
+		@extend .btn1;
+		&:hover{
+			color:$bg-color;
+			background-color: $bg-color;
+		}
+	}
+	@mixin button ($color1, $color2,$bg) {
+		padding: 12px 20px;
+		margin: 10px;
+		color: $bg-color;
+		border: solid 1px $color1;
+		background-color: $color2;
+		border-radius: $bg;
+		&:hover{
+			color:$color2;
+			background-color: $color1;
+	}
+}
+	.btn3{
+		@include button (red, white, blue);
+	}
+	.btn4{
+		@include button (blue, red,green);
+	}
+	.btn5 {
+		@include button (#254366, red, blue);
+	}
+	.big-box{
+		background-color: $bg-color;
+		color:$text-color;
+		width:200px;
+		height: 100px;
+		margin: auto;
+		text-align: center;
+		background-color: #333;
+		&:hover{
+			background-color: ( $bg );
+		}
+	}
+}

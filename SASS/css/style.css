@@ -1,0 +1,107 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  padding: 0;
+  margin: 0;
+  font-size: 14px;
+}
+
+.nav-bar {
+  width: 100%;
+}
+.nav-bar ul {
+  background: #aaa;
+  display: flex;
+  margin: 0 auto;
+  padding: 0 auto;
+  overflow: auto;
+}
+.nav-bar li {
+  width: 100%;
+  list-style-type: none;
+  text-align: center;
+}
+.nav-bar a {
+  padding: 20px 20px;
+  display: block;
+  text-transform: uppercase;
+  color: white;
+  text-decoration: none;
+}
+.nav-bar a:hover {
+  background: lightgreen;
+}
+.nav-bar a:active {
+  color: red;
+}
+.nav-bar a:after {
+  content: '!';
+}
+
+.content {
+  margin: 30px auto;
+  text-align: center;
+}
+.content .btn1, .content .btn2 {
+  padding: 12px 20px;
+  margin: 10px;
+  color: lightgreen;
+  border: solid 1px lightgreen;
+  background-color: white;
+}
+.content .btn2:hover {
+  color: lightgreen;
+  background-color: lightgreen;
+}
+.content .btn3 {
+  padding: 12px 20px;
+  margin: 10px;
+  color: lightgreen;
+  border: solid 1px red;
+  background-color: white;
+  border-radius: blue;
+}
+.content .btn3:hover {
+  color: white;
+  background-color: red;
+}
+.content .btn4 {
+  padding: 12px 20px;
+  margin: 10px;
+  color: lightgreen;
+  border: solid 1px blue;
+  background-color: red;
+  border-radius: green;
+}
+.content .btn4:hover {
+  color: red;
+  background-color: blue;
+}
+.content .btn5 {
+  padding: 12px 20px;
+  margin: 10px;
+  color: lightgreen;
+  border: solid 1px #254366;
+  background-color: red;
+  border-radius: blue;
+}
+.content .btn5:hover {
+  color: red;
+  background-color: #254366;
+}
+.content .big-box {
+  background-color: lightgreen;
+  color: white;
+  width: 200px;
+  height: 100px;
+  margin: auto;
+  text-align: center;
+  background-color: #333;
+}
+.content .big-box:hover {
+  background-color: #aaa;
+}
+
+/*# sourceMappingURL=style.css.map */
