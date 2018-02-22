@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
 import TaskItem from './TaskItem';
+import  {connect} from 'react-redux'; //import connect de ket noi du lieu giua react va redux   
 
 class TaskList extends Component {
 
@@ -24,15 +25,15 @@ class TaskList extends Component {
     }
 
   render() {
+      
 
-    var tasks = this.props.tasks;
+    var tasks = this.props.tasks; //this.props.tasks : tasks lay dc tu state cua Reducers
     var {filterName , filterStatus} = this.state;
     var ElmTask = tasks.map((task,index) => {
         return <TaskItem 
         key={index} 
         index = {index} 
         task = {task}
-        onUpdateStatus = {this.props.onUpdateStatus}
         onDelete={this.props.onDelete}
         onUpdate ={this.props.onUpdate}
         
@@ -81,4 +82,12 @@ class TaskList extends Component {
   }
 }
 
-export default TaskList;
+// cac state cua store chuyen thanh props cua component Tasklist
+
+const mapStateToProps = (state) =>{
+    return {
+       tasks : state.tasks // state.tasks : kiem tra index\reducers su dung key gi thi state.key do
+    }
+}
+
+export default connect(mapStateToProps,null)(TaskList);
