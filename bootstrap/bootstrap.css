@@ -1,9 +1,0 @@
-*{
-	box-sizing: border-box;
-}
-button.navbar-toggle {
-	float: left;
-}
-div.thumbnail{
-	border:1px solid #4051d0;
-}
