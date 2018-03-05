@@ -1,0 +1,19 @@
+$icon-font-path: '../fonts/';
+// bower:scss
+@import 'bower_components/bootstrap-sass/assets/stylesheets/_bootstrap.scss';
+// endbower
+
+@import 'vars.scss';
+@import 'mixins.scss';
+@import 'argon.css';
+@import 'icons.scss';
+@import 'commons.scss';
+
+
+//@import base scss
+@import 'components/variables/base.scss';
+//===== css aeonmall - binh duong
+
+@import 'components/aeonmall-binhduong.scss';
+
+

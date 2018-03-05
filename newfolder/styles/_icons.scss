@@ -1,0 +1,13 @@
+.icons {
+    display: inline-block;
+    @include square(40px);
+    @include border-radius(100%);
+    line-height: 40px;
+    text-align: center;
+    &.lang-icon {
+        &.active,
+        &:hover {
+            background-icon: $mainColor;
+        }
+    }
+}

@@ -1,0 +1,23 @@
+mixin mainNav
+  ul.nav.navbar-nav
+    li.active
+        a(href="#") Trang chủ
+    li
+        a(href="#") Khuyến mại &amp; sự kiện
+    li
+        a(href="#") Chương trình thành viên
+    li
+        a(href="#") Dịch vụ 
+    li
+        a(href="#") opValu
+    li
+        a(href="#") Bộ sưu tập
+    li
+        a(href="#") Công ty AEON
+    li
+        a(href="#") Liên hệ
+
+mixin description--items(content,detail)
+    .description__left--items
+        .left--items--title!= content
+        .left--items--details #{detail}

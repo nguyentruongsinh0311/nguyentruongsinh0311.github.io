@@ -1,0 +1,74 @@
+extends layouts/default
+
+block content
+  section.introduction
+    .container
+      .row
+        .col-md-12
+            .introduction--detail
+            .introduction--title AEON Bình Dương Canary
+            .introduction--subtitle Trung tâm mua sắm lớn nhất có mặt tại Bình Dương
+            .introduction--content Integer hendrerit ex eu tempor rhoncus. Duis interdum, dui eu tempor euismod, mi lectus pulvinar massa, vel sollicitudin lacus orci non justo. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Aliquam placerat est vitae aliquam sodales. Integer lectus augue, mattis congue nisl ac, lobortis mollis arcu. Ut congue nunc in quam finibus, non interdum leo aliquet. Vestibulum luctus, orci vitae aliquet auctor, justo erat venenatis turpis, quis feugiat dui lorem interdum nulla. Nullam fermentum magna eu libero interdum tempor. Vestibulum quis euismod libero, rhoncus mollis metus. Aliquam nec justo dignissim, consectetur neque nec, sollicitudin enim. In hac habitasse platea dictumst. Duis ante nulla, eleifend sed tincidunt ac, tempus ac tortor. Nullam tincidunt tincidunt orci, non malesuada eros laoreet ac.
+  section.description
+    .container
+      .row
+        .col-md-6.col-sm-12.col-xs-12
+          .description__left
+            +description--items('6.2 <br/> ha',"Diện tích mặt bằng")
+            +description--items('70.000 <br /> sq.m',"Diện tích trung tâm thương mại")
+            +description--items('180 <br /> lô',"Tổng số gian hàng")
+            +description--items('10.000 <br /> người',"Tổng lượt người đến mỗi tháng")
+            +description--items('1.000 <br /> chỗ',"Bãi đậu xe ô tô")
+            +description--items('6.000 <br /> chỗ',"Bãi đậu xe máy")
+        .col-md-6.col-sm-12.col-xs-12
+          .description__right
+            img(src="images/aeonmall-binhduong.jpg").img-responsive
+  section.map--floor
+    .container
+      .row
+        .map--floor--title Sơ đồ tầng
+        .map--floor--content  
+          .col-md-7.col-sm-12.col-xs-12
+            .map--floor--left
+              .map--floor--left--img.current#tab-1.hidden-sm.hidden-xs
+                img(src="images/map.jpg").img-responsive
+
+              .map--floor--left--img#tab-2
+                img(src="images/map.jpg").img-responsive
+
+              .map--floor--left--img#tab-3
+                img(src="images/map.jpg").img-responsive
+
+          .col-md-5.col-sm-12.col-xs-12
+            .map--floor--right
+              .map--floor--right--container.current(data-tab="tab-1")
+                .map--floor--right--img.hidden-md.hidden-lg
+                  img(src="images/map.jpg", alt="").img-responsive
+                .map--floor--right--content.clearfix
+                  .map--floor--right--title L2
+                  .map--floor--right--des 
+                    p Khu nhà hàng ẩm thực nước ngoài
+                    p Khu thực phẩm
+                    p Khu vui chơi dành cho trẻ em
+                    p Rạp chiếu phim
+              .map--floor--right--container(data-tab="tab-2")
+                .map--floor--right--img.hidden-md.hidden-lg
+                  img(src="images/map.jpg", alt="").img-responsive
+                .map--floor--right--content
+                  .map--floor--right--title L1
+                  .map--floor--right--des 
+                    p Con đường Nhật Bản
+                    p Khu trò chơi giải trí, thú nhún, dịch vụ, giáo dục
+              .map--floor--right--container(data-tab="tab-3")
+                .map--floor--right--img.hidden-md.hidden-lg
+                  img(src="images/map.jpg", alt="").img-responsive
+                .map--floor--right--content
+                  .map--floor--right--title G
+                  .map--floor--right--des 
+                    p Khu thời trang
+                    p  Đồ dung gia đình
+                    p  Điện máy và đồ gia dụng
+
+
+
+          
